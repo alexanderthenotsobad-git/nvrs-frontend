@@ -5,23 +5,20 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
+
         <div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            //href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
             By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/VRS-icon.svg"
+              alt="VRS Logo"
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={150}
+              height={150}
               priority
             />
           </a>
@@ -29,14 +26,14 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Image
+        {/* <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
+          //src="/next.svg"
+          //alt="Next.js Logo"
           width={180}
           height={37}
-          priority
-        />
+          priority /}
+        {/ /> */}
       </div>
 
       <div className={styles.grid}>
@@ -47,9 +44,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Login <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Login to VRS as an employee to set up and / or manage settings.</p>
         </a>
 
         <a
@@ -59,12 +56,12 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Patron <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Colaborate with your service staff to make your order one of a kind!</p>
         </a>
 
-        <a
+        {/* <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
@@ -88,7 +85,7 @@ export default function Home() {
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-        </a>
+        </a> */}
       </div>
     </main>
   );
