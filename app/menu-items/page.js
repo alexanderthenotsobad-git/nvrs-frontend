@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import MenuItemForm from '../components/MenuItemForm';
+import Link from 'next/link';
 
 export default function MenuItemsPage() {
   const [menuItems, setMenuItems] = useState([]);
@@ -12,13 +13,15 @@ export default function MenuItemsPage() {
 
   const fetchMenuItems = async () => {
     try {
-      const response = await fetch('/api/menu-items');
-      const data = await response.json();
+      const res = await fetch('/api/menu-items');
+      if (!res.ok) throw new Error('Failed to fetch');
+      const data = await res.json();
       setMenuItems(data);
     } catch (error) {
       console.error('Error fetching menu items:', error);
     }
-  };
+  }; 
+  
 
   return (
     <div>
@@ -32,5 +35,6 @@ export default function MenuItemsPage() {
         ))}
       </ul>
     </div>
+    
   );
 }

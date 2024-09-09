@@ -66,6 +66,9 @@ export default function MenuItemForm({ onItemAdded }) {
         required
       />
       <button type="submit">Add Item</button>
+      <button type="submit">Save</button>
+      <button type="submit">Delete</button>
+      
     </form>
   );
 }
